@@ -1,9 +1,22 @@
-<h1>New article</h1>
+<h1> New article </h1>
 
-<%= render "form", article: @article %>
+<%= form_with model: @article do |form| %>
+  <div>
+    <%= form.label :title %>
+    <%= form.text_field :title %>
+  <div> 
 
-<br>
+  <div>
+    <%= form.label :body %>
+    <%= form.text_area :body %>
+  <div> 
 
-<div>
-  <%= link_to "Back to articles", articles_path %>
-</div>
+  <div>
+    <%= form.submit %>
+  <div>
+
+<% end %>
+
+
+
+
