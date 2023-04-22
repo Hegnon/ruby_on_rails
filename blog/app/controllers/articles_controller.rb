@@ -48,7 +48,8 @@ class ArticlesController < ApplicationController
     
   # DELETE /articles/1 or /articles/1.json
   def destroy
-    @article = Article.find(params[:id])      
+    @article = Article.find(params[:id])  
+    @article.destroy    
   end
 
   private
