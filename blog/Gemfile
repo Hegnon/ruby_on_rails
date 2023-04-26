@@ -27,6 +27,14 @@ gem "stimulus-rails"
 # Build JSON APIs with ease [https://github.com/rails/jbuilder]
 gem "jbuilder"
 
+gem 'webpacker', '~> 5.4.4'
+
+gem 'popper_js', '~> 2.11.6'
+
+gem 'sassc'
+
+gem 'sass-rails', '>= 6'
+
 # Use Redis adapter to run Action Cable in production
 # gem "redis", "~> 4.0"
 
