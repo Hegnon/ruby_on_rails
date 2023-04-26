@@ -31,9 +31,9 @@ gem 'webpacker', '~> 5.4.4'
 
 gem 'popper_js', '~> 2.11.6'
 
-gem 'sassc'
 
-gem 'sass-rails', '>= 6'
+
+gem 'sass-rails'
 
 gem 'turbolinks'
 
