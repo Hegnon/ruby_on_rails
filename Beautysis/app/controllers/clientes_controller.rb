@@ -8,6 +8,8 @@ class ClientesController < ApplicationController
 
   # GET /clientes/1 or /clientes/1.json
   def show
+    @cliente = Cliente.find(params[:id])
+    @idade = @cliente.idade
   end
 
   # GET /clientes/new
