@@ -2,20 +2,30 @@
 
 one:
   nome: MyString
-  data_nascimento: 2023-04-26
+  data_nascimento: 2023-04-27
   idade: 1
-  endereco: MyString
   email: MyString
   instagram: MyString
   profissao: MyString
+  cep: MyString
+  logradouro: MyString
+  complemento: MyString
+  bairro: MyString
+  cidade: MyString
+  uf: MyString
   indicacao: MyString
 
 two:
   nome: MyString
-  data_nascimento: 2023-04-26
+  data_nascimento: 2023-04-27
   idade: 1
-  endereco: MyString
   email: MyString
   instagram: MyString
   profissao: MyString
+  cep: MyString
+  logradouro: MyString
+  complemento: MyString
+  bairro: MyString
+  cidade: MyString
+  uf: MyString
   indicacao: MyString

@@ -4,10 +4,15 @@ class CreateClientes < ActiveRecord::Migration[7.0]
       t.string :nome
       t.date :data_nascimento
       t.integer :idade
-      t.string :endereco
       t.string :email
       t.string :instagram
       t.string :profissao
+      t.string :cep
+      t.string :logradouro
+      t.string :complemento
+      t.string :bairro
+      t.string :cidade
+      t.string :uf
       t.string :indicacao
 
       t.timestamps

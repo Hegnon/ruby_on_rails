@@ -1,0 +1,9 @@
+# Read about fixtures at https://api.rubyonrails.org/classes/ActiveRecord/FixtureSet.html
+
+one:
+  data_hora: 2023-04-27 15:42:38
+  cliente: one
+
+two:
+  data_hora: 2023-04-27 15:42:38
+  cliente: two
