@@ -1,3 +1,5 @@
+require "viacep"
+
 class ClientesController < ApplicationController
   before_action :set_cliente, only: %i[ show edit update destroy ]
 
@@ -56,6 +58,23 @@ class ClientesController < ApplicationController
     respond_to do |format|
       format.html { redirect_to clientes_url, notice: "Cliente was successfully destroyed." }
       format.json { head :no_content }
+    end
+  end
+
+  
+
+  def consulta_cep
+    cep = params[:cep].gsub('-', '')
+    endereco = ViaCep::Address.new(cep: cep)
+    if endereco.valid?
+      render json: { 
+        logradouro: endereco.logradouro, 
+        bairro: endereco.bairro, 
+        cidade: endereco.localidade, 
+        estado: endereco.uf 
+      }
+    else
+      render json: { error: 'CEP não encontrado' }, status: :unprocessable_entity
     end
   end
 

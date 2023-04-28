@@ -2,13 +2,10 @@
 
 <h1>Clientes</h1>
 
-<div id="clientes">
+<ul>
   <% @clientes.each do |cliente| %>
-    <%= render cliente %>
-    <p>
-      <%= link_to "Show this cliente", cliente %>
-    </p>
+    <li><%= link_to cliente.nome, cliente %></li>
   <% end %>
-</div>
+</ul>
 
 <%= link_to "New cliente", new_cliente_path %>
