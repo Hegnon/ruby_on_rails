@@ -1,5 +1,5 @@
 class Cliente < ApplicationRecord
-    
+    validates :cep, presence: true, length: { is: 8 }
     has_many :transacao, dependent: :destroy
     has_many :agendamento, dependent: :destroy   
 

@@ -22,6 +22,12 @@ gem "puma", "~> 5.0"
 # Build JSON APIs with ease [https://github.com/rails/jbuilder]
 gem "jbuilder"
 
+gem 'jquery-rails'
+
+gem 'jquery-ui-rails'
+
+gem "sassc-rails"
+
 gem 'bootstrap', '~> 5.1.0'
 
 # Use Redis adapter to run Action Cable in production
