@@ -2,7 +2,7 @@ $(document).ready(function() {
     $('#cliente_cep').blur(function() {
       var cep = $(this).val().replace(/\D/g, '');
   
-      if (cep != "") {
+      if (cep !== "") {
         var validacep = /^[0-9]{8}$/;
   
         if(validacep.test(cep)) {
