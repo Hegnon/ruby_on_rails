@@ -70,8 +70,8 @@ class ClientesController < ApplicationController
       render json: { 
         logradouro: endereco.logradouro, 
         bairro: endereco.bairro, 
-        cidade: endereco.localidade, 
-        estado: endereco.uf 
+        cidade: endereco.localidade,
+        estado: endereco.uf
       }
     else
       render json: { error: 'CEP não encontrado' }, status: :unprocessable_entity
