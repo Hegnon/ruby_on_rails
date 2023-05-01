@@ -16,3 +16,4 @@ class Cliente < ApplicationRecord
     end
 end
 
+
