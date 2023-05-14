@@ -1,4 +1,5 @@
 Rails.application.routes.draw do
+  root 'clientes#index'
   resources :clientes
   resources :transacaos
   resources :agendamentos
