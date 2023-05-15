@@ -1,5 +1,5 @@
 class Calculator
     def sum (a, b)
-        10
+        a + b 
     end
 end
