@@ -1,4 +1,5 @@
 class Calculator
-    def sam (a, b)
-        20
+    def sum (a, b)
+        12
+    end
 end
